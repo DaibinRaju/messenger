@@ -10,13 +10,13 @@ export default class ContactList extends React.Component {
   ];
   render() {
     return (
-      <Div>
+      <Div m="1rem">
         <Div h="20vh">
           <ContactToolbar />
           <ContactSearch />
         </Div>
 
-        <Div overflow="visible scroll" h="75vh">
+        <Div overflow="visible scroll" h="calc( 80vh - 1rem )">
           {this.contact.map((c) => (
             <ContactItem />
           ))}

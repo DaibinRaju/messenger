@@ -6,7 +6,7 @@ export default class ContactItem extends React.Component {
     return (
       <Div p="1rem">
         <Row>
-          <Col size={2}>
+          <Col size={3}>
             <Image
               src="https://randomuser.me/api/portraits/med/men/11.jpg"
               rounded="circle"

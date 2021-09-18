@@ -10,8 +10,7 @@ export default class ContactList extends React.Component {
             <Button
               h="2.5rem"
               w="2.5rem"
-              bg="warning700"
-              hoverBg="warning600"
+              bg="color1"
               rounded="circle"
               m={{ r: "1rem" }}
               shadow="2"
@@ -29,8 +28,7 @@ export default class ContactList extends React.Component {
             <Button
               h="2.5rem"
               w="2.5rem"
-              bg="warning700"
-              hoverBg="warning600"
+              bg="color1"
               rounded="circle"
               m={{ r: "1rem" }}
               shadow="2"
