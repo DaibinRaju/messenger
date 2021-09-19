@@ -15,8 +15,8 @@ const theme = {
   }
 };
 
-export default class Messenger extends React.Component {
-  render() {
+export default function Messenger(){
+
     return (
       <ThemeProvider theme={theme}>
         <Div>
@@ -32,4 +32,4 @@ export default class Messenger extends React.Component {
       </ThemeProvider>
     );
   }
-}
+

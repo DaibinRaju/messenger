@@ -1,8 +1,8 @@
 import { Col, Image, Row, Div, Text } from "atomize";
 import React from "react";
 
-export default class ContactItem extends React.Component {
-  render() {
+export default function ContactItem(){
+
     return (
       <Div m="15px">
         <Row border={{b:"1px solid"}} borderColor="color2">
@@ -22,5 +22,5 @@ export default class ContactItem extends React.Component {
         </Row>
       </Div>
     );
-  }
+  
 }

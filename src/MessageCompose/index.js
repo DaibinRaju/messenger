@@ -8,8 +8,7 @@ import {
   faSmile,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default class MessageCompose extends React.Component {
-  render() {
+export default function MessageCompose() {
     return (
       <Row>
         <Col size={8}>
@@ -83,4 +82,4 @@ export default class MessageCompose extends React.Component {
       </Row>
     );
   }
-}
+

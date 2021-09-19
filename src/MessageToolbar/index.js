@@ -3,8 +3,8 @@ import { Div, Col, Row, Text, Button } from "atomize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo, faPhone, faInfo } from "@fortawesome/free-solid-svg-icons";
 
-export default class MessageToolbar extends React.Component {
-  render() {
+export default function MessageToolbar(){
+
     return (
       <Div p="1rem">
         <Row>
@@ -56,4 +56,3 @@ export default class MessageToolbar extends React.Component {
       </Div>
     );
   }
-}

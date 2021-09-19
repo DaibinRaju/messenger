@@ -3,8 +3,7 @@ import { Div, Row, Col, Button, Text } from "atomize";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-export default class ContactList extends React.Component {
-  render() {
+export default function ContactList() {
     return (
       <Div p="1rem">
         <Row>
@@ -42,5 +41,4 @@ export default class ContactList extends React.Component {
         </Row>
       </Div>
     );
-  }
 }

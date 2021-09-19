@@ -1,7 +1,7 @@
 import React from "react";
 import { Div, Input } from "atomize";
-export default class ContactSearch extends React.Component {
-  render() {
+export default function ContactSearch(){
+
     return (
       <Div p="1rem">
         <Input
@@ -11,5 +11,4 @@ export default class ContactSearch extends React.Component {
         />
       </Div>
     );
-  }
 }

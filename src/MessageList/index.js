@@ -1,12 +1,9 @@
 import { Component, React } from "react";
 import MessageToolbar from "../MessageToolbar";
 import MessageCompose from "../MessageCompose";
-import { Div, Text, } from "atomize";
-export default class MessageList extends Component {
-  constructor(props) {
-    super(props);
-  }
-  tempMessages = [
+import { Div, Text } from "atomize";
+export default function MessageList() {
+  const tempMessages = [
     {
       id: 1,
       author: "apple",
@@ -79,58 +76,58 @@ export default class MessageList extends Component {
     },
   ];
 
-  render() {
-    return (
-      <Div>
-        <Div h="10vh" bg="color2">
-          <MessageToolbar />
+  return (
+    <Div>
+      <Div h="10vh" bg="color2">
+        <MessageToolbar />
+      </Div>
+      <Div
+        h="80vh"
+        overflow="scroll"
+        d="flex"
+        justify="flex-end"
+        flexDir="column"
+        p="10px"
+      >
+        <Div d="flex" justify="flex-end">
+          <Text
+            m="2px"
+            p="1rem"
+            rounded={{ l: "circle", tr: "circle" }}
+            bg="color2"
+          >
+            Hello World. This is someones message1.
+          </Text>
         </Div>
-        <Div h="80vh" overflow="scroll" d="flex" justify="flex-end" flexDir="column" p="10px">
-          <Div d="flex" justify="flex-end">
-            <Text
-			  m="2px"
-              p="1rem"
-              rounded={{ l: "circle", tr: "circle" }}
-              bg="color2"
-            >
-              Hello World. This is someones message1.
-            </Text>
-          </Div>
-		  <Div d="flex" justify="flex-end">
-            <Text
-			m="2px"
-              p="1rem"
-              rounded={{ l: "circle"}}
-              bg="color2"
-            >
-              Hello World. This is someones message2.
-            </Text>
-          </Div>
-		  <Div d="flex" justify="flex-end">
-            <Text
-			m="2px"
-              p="1rem"
-              rounded={{ l: "circle", br: "circle" }}
-              bg="color2"
-            >
-              Hello World. This is someones message3.
-            </Text>
-          </Div>
-		  <Div d="flex" justify="flex-start">
-            <Text
-              m="2px"
-              p="1rem"
-              rounded={{ r: "circle", tl: "circle" }}
-              bg="color3"
-            >
-              Hello World. This is someones message2.
-            </Text>
-          </Div>
+        <Div d="flex" justify="flex-end">
+          <Text m="2px" p="1rem" rounded={{ l: "circle" }} bg="color2">
+            Hello World. This is someones message2.
+          </Text>
         </Div>
-        <Div h="10vh">
-          <MessageCompose />
+        <Div d="flex" justify="flex-end">
+          <Text
+            m="2px"
+            p="1rem"
+            rounded={{ l: "circle", br: "circle" }}
+            bg="color2"
+          >
+            Hello World. This is someones message3.
+          </Text>
+        </Div>
+        <Div d="flex" justify="flex-start">
+          <Text
+            m="2px"
+            p="1rem"
+            rounded={{ r: "circle", tl: "circle" }}
+            bg="color3"
+          >
+            Hello World. This is someones message2.
+          </Text>
         </Div>
       </Div>
-    );
-  }
+      <Div h="10vh">
+        <MessageCompose />
+      </Div>
+    </Div>
+  );
 }

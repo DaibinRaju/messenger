@@ -3,12 +3,12 @@ import ContactToolbar from "../ContactToolbar";
 import ContactSearch from "../ContactSearch";
 import ContactItem from "../ContactItem";
 import { Div } from "atomize";
-export default class ContactList extends React.Component {
-  contact = [
+export default function ContactList(){
+  const contact = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
     2, 2, 2, 2, 2, 2, 2,
   ];
-  render() {
+
     return (
       <Div p="1rem">
         <Div h="20vh">
@@ -17,11 +17,11 @@ export default class ContactList extends React.Component {
         </Div>
 
         <Div overflow="visible scroll" h="calc( 80vh - 1rem )">
-          {this.contact.map((c) => (
+          {contact.map((c) => (
             <ContactItem />
           ))}
         </Div>
       </Div>
     );
-  }
+  
 }
