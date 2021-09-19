@@ -1,7 +1,7 @@
 import { Component, React } from "react";
 import MessageToolbar from "../MessageToolbar";
 import MessageCompose from "../MessageCompose";
-import { Div, Text, Row, Col } from "atomize";
+import { Div, Text, } from "atomize";
 export default class MessageList extends Component {
   constructor(props) {
     super(props);
@@ -81,11 +81,11 @@ export default class MessageList extends Component {
 
   render() {
     return (
-      <Div m="1rem">
-        <Div h="10vh">
+      <Div>
+        <Div h="10vh" bg="color2">
           <MessageToolbar />
         </Div>
-        <Div h="75vh" overflow="scroll" d="flex" justify="flex-end" flexDir="column">
+        <Div h="80vh" overflow="scroll" d="flex" justify="flex-end" flexDir="column" p="10px">
           <Div d="flex" justify="flex-end">
             <Text
 			  m="2px"

@@ -10,7 +10,7 @@ export default class ContactList extends React.Component {
   ];
   render() {
     return (
-      <Div m="1rem">
+      <Div p="1rem">
         <Div h="20vh">
           <ContactToolbar />
           <ContactSearch />

@@ -1,11 +1,11 @@
-import { Col, Image, Row, Div } from "atomize";
+import { Col, Image, Row, Div, Text } from "atomize";
 import React from "react";
 
 export default class ContactItem extends React.Component {
   render() {
     return (
-      <Div p="1rem">
-        <Row>
+      <Div m="15px">
+        <Row border={{b:"1px solid"}} borderColor="color2">
           <Col size={3}>
             <Image
               src="https://randomuser.me/api/portraits/med/men/11.jpg"
@@ -14,8 +14,10 @@ export default class ContactItem extends React.Component {
             />
           </Col>
           <Col>
-            <Row>Daibin Raju</Row>
-            <Row>Hello World</Row>
+            <Row>
+              <Text textWeight={900}>Daibin Raju</Text>
+            </Row>
+            <Row>Hello World. This is a message</Row>
           </Col>
         </Row>
       </Div>

@@ -10,6 +10,9 @@ const theme = {
     color3:"#F2F4F7",
     color4:"#FFFFFF",
   },
+  grid: {
+    gutterWidth: "0px",
+  }
 };
 
 export default class Messenger extends React.Component {
@@ -21,7 +24,7 @@ export default class Messenger extends React.Component {
             <Col size={3} border={{r:'solid'}} borderColor='color2'>
               <ContactList />
             </Col>
-            <Col size={9}>
+            <Col size={9} border={{l:'solid'}} borderColor='color2'>
               <MessageList />
             </Col>
           </Row>

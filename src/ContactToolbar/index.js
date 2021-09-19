@@ -1,5 +1,7 @@
 import React from "react";
-import { Div, Row, Col, Button, Icon, Text } from "atomize";
+import { Div, Row, Col, Button, Text } from "atomize";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export default class ContactList extends React.Component {
   render() {
@@ -16,13 +18,13 @@ export default class ContactList extends React.Component {
               shadow="2"
               hoverShadow="4"
             >
-              <Icon name="Search" size="20px" color="white" />
+              <FontAwesomeIcon icon={faBars} />
             </Button>
           </Col>
           <Col size={8} textAlign="center" align="center">
-            <Text textWeight={900} p={{ t: "auto", b: "auto" }}>
-              Messenger
-            </Text>
+            <Div d="flex" align="center" h="100%" justify="center">
+              <Text textWeight={900}>Messenger</Text>
+            </Div>
           </Col>
           <Col size={2}>
             <Button
@@ -34,7 +36,7 @@ export default class ContactList extends React.Component {
               shadow="2"
               hoverShadow="4"
             >
-              <Icon name="Plus" size="20px" color="white" />
+              <FontAwesomeIcon icon={faPlus} />
             </Button>
           </Col>
         </Row>
